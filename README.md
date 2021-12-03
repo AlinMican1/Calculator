@@ -10,3 +10,6 @@ it uses a stack and pushes the answer whenever a operator is met. For example Re
 stack the numbers and whenever a operator is met in this case "+" a if statment is popping the latest 2 entries in the stack which 
 are both 2. Then the operation 2 +2 is performed and now the new answer which is 4 is pushed onto the stack. Now the stack only contains
 4 but we still have 3 and - left so we do the same thing until we hit minus, (4 - 3) which result will output 1.
+
+The project was done using TDD, because I wanted to get used to using test cases in JUNIT, so every class that has Test at the end e.g "EntryTest.java"
+is a test case for that certain class, being able to test case as i go along.
