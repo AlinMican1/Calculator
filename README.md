@@ -1,6 +1,5 @@
 # Calculator
--This is a maven project made in eclipse IDE. 
--Main class is the Calculator which opens up a user interface, being able to use the calculator.
+Created a calculator that utilised 'Reverse Polish notation' and 'Infix notation' to calculate a string inputted by the user. Test cases in JUNIT were written before each class to ensure the code and algorithm worked. UML diagrams were used to understand the structure of the calculator , SVN was used to make a repository to deliver updates of the working code and javadoc was used to document it. The program works by using a stack which is further "facade" into more stacks that takes a numbers, operators and strings. The reverse polish uses the number stack to calculate a string written and the infix uses shunting yard algorithm to calculate an infix string.
 ![Calculator](https://user-images.githubusercontent.com/95189863/144627894-465e66cf-74ff-411d-ba6b-f100aee354bc.JPG)
 
 -The idea is that the user is able to write an infix notation formula and using shunting yard algorithm we are able to produce
