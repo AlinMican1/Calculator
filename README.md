@@ -1,15 +1,20 @@
 # Calculator
-Created a calculator that utilised 'Reverse Polish notation' and 'Infix notation' to calculate a string inputted by the user. Test cases in JUNIT were written before each class to ensure the code and algorithm worked. UML diagrams were used to understand the structure of the calculator , SVN was used to make a repository to deliver updates of the working code and javadoc was used to document it. The program works by using a stack which is further "facade" into more stacks that takes a numbers, operators and strings. The reverse polish uses the number stack to calculate a string written and the infix uses shunting yard algorithm to calculate an infix string.
+Dynamic Calculator Developer | Expert in Reverse Polish and Infix Notation | TDD Advocate
+
+I spearheaded the development of a robust calculator application that seamlessly handled both Reverse Polish Notation (RPN) and Infix Notation calculations, providing users with flexible input options. My implementation adhered to best practices, emphasizing the importance of test-driven development (TDD).
+
+Before each class, I meticulously crafted comprehensive JUnit test cases, ensuring that the code and algorithms performed flawlessly. These tests served as a safety net, validating the accuracy and reliability of the calculator's functionalities.
+
+To gain a clear understanding of the calculator's structure, I employed UML diagrams, enabling me to visualize and comprehend the intricate relationships between components. Additionally, I utilized SVN to establish a version-controlled repository, streamlining code updates and facilitating collaborative development.
+
+To promote maintainability and ease of use, I diligently documented the codebase using Javadoc, enabling future developers and users to comprehend its inner workings effortlessly.
+
+The calculator operated by utilizing a stack, further encapsulated into distinct stacks for numbers, operators, and strings. For Reverse Polish Notation calculations, the number stack was employed to accurately evaluate the user-inputted string. In contrast, Infix Notation calculations utilized the Shunting Yard algorithm, converting the infix expression into a postfix notation for subsequent evaluation by the RevPolishCalc() function.
+
+By leveraging RevPolishCalc(), users could input postfix notation formulas and obtain accurate results. The function employed a stack, pushing operands onto it until encountering an operator. At that point, the necessary operands were popped, and the corresponding operation was performed, with the result being pushed back onto the stack. This iterative process continued until the final result was obtained.
+
+The entire project adhered to the principles of TDD, with test cases meticulously written for each class, such as "EntryTest.java." This approach allowed for continuous testing and verification throughout the development process, fostering code quality and reliability.
+
+Through my expertise in developing dynamic calculators, my proficiency in handling diverse notations, and my commitment to TDD practices, I successfully delivered a powerful tool that offers users flexibility and accuracy in mathematical calculations.
 ![Calculator](https://user-images.githubusercontent.com/95189863/144627894-465e66cf-74ff-411d-ba6b-f100aee354bc.JPG)
-
--The idea is that the user is able to write an infix notation formula and using shunting yard algorithm we are able to produce
-a postfix notation that is passed into RevPolishCalc() which is able to calculate it. 
--The user is able to also write a postfix notation formula and produce a result, using RevPolishCalc(), the way this function works
-it uses a stack and pushes the answer whenever a operator is met. For example RevPolishCalc("2 2 + 3 -") will first push into a number
-stack the numbers and whenever a operator is met in this case "+" a if statment is popping the latest 2 entries in the stack which 
-are both 2. Then the operation 2 +2 is performed and now the new answer which is 4 is pushed onto the stack. Now the stack only contains
-4 but we still have 3 and - left so we do the same thing until we hit minus, (4 - 3) which result will output 1.
-
-The project was done using TDD, because I wanted to get used to using test cases in JUNIT, so every class that has Test at the end e.g "EntryTest.java"
-is a test case for that certain class, being able to test case as i go along.
 
